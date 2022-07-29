@@ -5,7 +5,7 @@ from .views import CheeseDetails, CheeseListView, CheeseCreateView
 app_name="cheeses"
 urlpatterns=[
     path(
-        route='/',
+        route='',
         view=CheeseListView.as_view(),
         name='list',
     ),
