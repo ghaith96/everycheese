@@ -13,3 +13,7 @@ class CheeseDetails(DetailView):
 class CheeseCreateView(LoginRequiredMixin, CreateView):
     model = Cheese
     fields = ['name', 'description', 'firmness', 'country',]
+
+    def form_valid(self, form):
+        form.instance.creator = self.request.creator
+        return super().form_valid(form)
