@@ -13,4 +13,8 @@
         <p>{{ cheese.description }}</p>
     {% endif %}
 
+    {% if cheese.country %}
+        <p>Country of origin: <img src="{{cheese.country.flag}}" alt="{{cheese.country.flag}}" /> {{ cheese.country.name }}</p>
+    {% endif %}
+
 {% endblock content %}

@@ -1,7 +1,6 @@
-from ctypes import util
-from enum import auto
 from django.db import models
 from autoslug import AutoSlugField
+from django_countries.fields import CountryField
 
 import model_utils.models
 
@@ -17,6 +16,7 @@ class Cheese(model_utils.models.TimeStampedModel):
     slug = AutoSlugField("Cheese address", unique=True, always_update=False, populate_from='name')
     description = models.TextField("Description", blank=True)
     firmness = models.CharField("Firmness", max_length=20, choices=Firmness.choices, default=Firmness.UNSPECIFIED)
+    country = CountryField("Country of origin", blank=True)
 
     def __str__(self) -> str:
         return self.name
