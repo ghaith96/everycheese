@@ -1,4 +1,5 @@
 from django.template.defaultfilters import slugify
+import pytest
 
 import factory
 import factory.fuzzy
@@ -21,3 +22,6 @@ class CheeseFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = Cheese
     
+@pytest.fixture
+def cheese():
+    return CheeseFactory()

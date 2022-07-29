@@ -1,10 +1,6 @@
 import pytest
 from django.urls import reverse, resolve 
-from .factories import CheeseFactory 
-
-@pytest.fixture
-def cheese():
-    return CheeseFactory()
+from .factories import cheese
 
 pytestmark = pytest.mark.django_db
 
