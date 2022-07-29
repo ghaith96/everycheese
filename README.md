@@ -1,7 +1,19 @@
-EveryCheese
+EveryCheese - my journy through Django Crash Course using Python 3.8 and Django 3.x book.
 ==============================
 
 The Ultimate Cheese Index!
+
+# Summary
+
+> We started with a deployable project by using the django-crash- starter Cookiecutter template. We installed dependencies, cre- ated a database, and started up Django’s development server. Then we saved our progress using git.
+
+> Next, we explored authentication and the User model. We ex- panded upon the User model by adding a bio field. Then we learned about tests and test coverage.
+
+> Now we got into the cheesiness of things. We created a Cheeses app and a Cheese model. We generated the model migration and executed it, creating a table in our database. And we began writing our tests.
+
+> From here we expanded on our cheese model and began adding views so users could start adding their favorite cheeses. Work- ing with views meant learning about controlling access to views, adding links, buttons, multi-use templates, and third-party pack- ages like django-countries and django-crispy-forms.
+
+> Throughout all of this, we reinforced the idea of writing easily understood function-based tests powered by pytest. That came 273 with more knowledge about useful project ingredients like test factories and pytest fixtures.
 
 ### Quick setup
 
