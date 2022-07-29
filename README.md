@@ -1,7 +1,9 @@
-EveryCheese - my journy through Django Crash Course using Python 3.8 and Django 3.x book.
+EveryCheese
 ==============================
 
 The Ultimate Cheese Index!
+
+My journy through Django Crash Course using Python 3.8 and Django 3.x book.
 
 # Summary
 
