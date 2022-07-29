@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .views import CheeseDetails, CheeseListView, CheeseCreateView
+from .views import CheeseDetails, CheeseListView, CheeseCreateView, CheeseUpdateView
 
 app_name="cheeses"
 urlpatterns=[
@@ -18,5 +18,10 @@ urlpatterns=[
         route='<slug:slug>/',
         view=CheeseDetails.as_view(),
         name='detail',
+    ),
+    path(
+        route='<slug:slug>/update/',
+        view=CheeseUpdateView.as_view(),
+        name='update',
     ),
 ]
